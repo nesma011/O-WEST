@@ -68,10 +68,13 @@ export default function Home() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-extrabold mb-12 tracking-wide"
+            className="text-6xl md:text-6xl font-extrabold mb-12 tracking-wide"
           >
             {name}
           </motion.h1>
+          <h1 className='text-3xl py-4 font-semibold pe-4'>
+  🚀 Launching New Phase with Unique Apartments 🏢✨
+</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl">
             {[
               { title: "اسعار تبدأ من", value: `${Number(starting_price).toLocaleString()} LE`, bg: "bg-indigo-100" },
