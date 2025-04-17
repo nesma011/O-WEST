@@ -41,8 +41,10 @@ export default function Home() {
     units
   } = project
 
-  const phone = units[0]?.phone
-
+  const rawPhone = units[0]?.phone || ''
+  const cleanedPhone = rawPhone.replace(/^0/, '')
+  const phone = `20${cleanedPhone}`
+  
   return (
     <div className="font-sans text-gray-800 overflow-x-hidden">
       {/* Navigation Bar */}
