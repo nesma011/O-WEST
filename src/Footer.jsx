@@ -11,7 +11,7 @@ const Footer = ({ phoneNumber }) => {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 gap-4 py-6">
         <div>
           <h4 className="text-l font-semibold text-center">
-            مزيد من المعلومات وخطط السداد والوحدات المتاحة، لا تتردد فى التواصل معنا
+         For More Information ,Contact Us
           </h4>
         </div>
 
@@ -25,13 +25,13 @@ const Footer = ({ phoneNumber }) => {
             className="bg-yellow-400 hover:bg-yellow-300 text-black px-4 py-2 rounded-full flex items-center gap-2 transition"
           >
             <ArrowUp size={18} />
-            إلى الأعلى
+            UP
           </button>
         </div>
       </div>
 
       <div className="text-center text-xs text-gray-400 pb-4">
-        © {new Date().getFullYear()} جميع الحقوق محفوظة
+        © {new Date().getFullYear()} All rights reserved.
       </div>
     </footer>
   );
