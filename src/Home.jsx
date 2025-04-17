@@ -155,11 +155,7 @@ export default function Home() {
                 alt={unit.type}
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                <button className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200">
-                  عرض التفاصيل
-                </button>
-              </div>
+              
               <div className="flex justify-between items-center p-4 bg-gray-100">
                 <div className="p-4">
                   <h3 className="text-2xl font-bold capitalize">{unit.type}</h3>
