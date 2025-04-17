@@ -43,6 +43,9 @@ export default function Home() {
   } = project
 
   const phone = units[0]?.phone;
+  const countryCode = "+20"; 
+  const formattedPhone = `${countryCode}${phone}`;
+
   return (
     <div className="font-sans text-gray-800">
      {/* Hero Section with Background Image */}
@@ -157,7 +160,7 @@ export default function Home() {
         <div>
               {/* أيقونة الواتساب */}
           <a
-            href={`https://wa.me/${phone}`} // استخدام رقم الهاتف من البيانات
+            href={`https://wa.me/${formattedPhone}`} // استخدام رقم الهاتف من البيانات
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-4 mr-4 text-green-500 hover:text-green-600"
@@ -167,7 +170,7 @@ export default function Home() {
 
           {/* أيقونة التليفون */}
           <a
-            href={`tel:${phone}`} // استخدام رقم الهاتف من البيانات
+            href={`tel:${formattedPhone}`} // استخدام رقم الهاتف من البيانات
             className="inline-block mt-4 text-blue-500 hover:text-blue-600"
           >
             <FaPhone className="text-5xl" />
@@ -194,7 +197,7 @@ export default function Home() {
 <Footer phoneNumber={phone} />
       {/* Floating WhatsApp */}
       <a
-        href={`https://wa.me/${phone}`}
+        href={`https://wa.me/${formattedPhone}`}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 z-[99] right-6 bg-green-500 p-4 rounded-full shadow-xl hover:bg-green-600 transform hover:scale-110 transition-all"
