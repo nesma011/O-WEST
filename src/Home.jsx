@@ -5,6 +5,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 import { FaWhatsapp, FaPhone, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 import bg from './assets/bg.jpg'
+import logo from './assets/logo.png' // افترضت وجود صورة للوجو
 import Slider from './Slider'
 import Footer from './Footer'
 
@@ -44,8 +45,16 @@ export default function Home() {
 
   return (
     <div className="font-sans text-gray-800 overflow-x-hidden">
+      {/* Navigation Bar */}
+      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
+          <img src={logo} alt="Logo" className="h-12" />
+          {/* يمكنك إضافة روابط تنقل هنا إذا أردت */}
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <div className="relative h-screen w-full overflow-hidden">
+      <div className="relative h-screen w-full overflow-hidden pt-16">
         <motion.img
           src={bg}
           alt={name}
@@ -206,7 +215,16 @@ export default function Home() {
       >
         <FaWhatsapp className="text-white text-4xl" />
       </motion.a>
+
+      {/* Floating Phone Icon */}
+      <motion.a
+        href={`tel:${phone}`}
+        className="fixed bottom-6 left-6 bg-blue-500 p-4 rounded-full shadow-xl hover:bg-blue-600 z-[99]"
+        animate={{ scale: [1, 1.1, 1] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        <FaPhone className="text-white text-4xl" />
+      </motion.a>
     </div>
   )
 }
-
