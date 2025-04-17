@@ -5,7 +5,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 import { FaWhatsapp, FaPhone, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 import bg from './assets/bg.jpg'
-import logo from './assets/logo.png' // افترضت وجود صورة للوجو
+import logo from './assets/logo.jpg' // افترضت وجود صورة للوجو
 import Slider from './Slider'
 import Footer from './Footer'
 
