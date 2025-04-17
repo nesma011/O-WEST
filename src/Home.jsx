@@ -54,7 +54,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative h-screen w-full overflow-hidden pt-16">
+      <div className="relative h-screen w-full overflow-hidden pt-24">
         <motion.img
           src={bg}
           alt={name}
@@ -68,8 +68,8 @@ export default function Home() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-12 tracking-wide"
-          >
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-wide"
+            >
             {name}
           </motion.h1>
           <h1 className='text-3xl py-4 font-semibold pe-4'>
