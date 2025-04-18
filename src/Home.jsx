@@ -115,7 +115,6 @@ export default function Home() {
         viewport={{ once: true }}
         className="max-w-4xl mx-auto my-16 px-4 space-y-6"
       >
-        <h2 className="text-3xl font-semibold text-center text-gray-200">مميزات المشروع</h2>
        {/*  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-semibold  p-6 ">
           {[
             { title: "موقع متميز", desc:" ٣ دقائق من مول مصر , ٣ دقائق من وصلة دهشور, ٥ دقائق من ميدان جهينه " },
@@ -136,7 +135,7 @@ export default function Home() {
             </motion.div>
           ))}
         </div> */}
-     <div className="flex justify-center items-center my-4 bg-white rounded-xl shadow-lg p-6">
+     <div className="flex justify-center items-center my-4 rounded-xl shadow-lg p-6">
   <img src={img1} alt="launch" className="h-[600px] w-[300px] bg-white" />
 </div>
 
