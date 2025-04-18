@@ -7,7 +7,7 @@ const Footer = ({ phoneNumber }) => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#0a1d37] text-white">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 gap-4 py-6">
         <div>
           <h4 className="text-l font-semibold text-center">

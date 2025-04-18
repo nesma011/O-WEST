@@ -79,16 +79,16 @@ export default function Home() {
 </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl">
             {[
-              { title: "اسعار تبدأ من", value: `${Number(starting_price).toLocaleString()} LE`, bg: "bg-indigo-100" },
-              { title: "مقدم يبدأ من", value: `${parseFloat(down_payment_percent).toFixed(0)}%`, bg: "bg-green-100" },
-              { title: "قسط", value: `${installment_years} سنين`, bg: "bg-yellow-100" },
+              { title: "اسعار تبدأ من", value: `${Number(starting_price).toLocaleString()} LE`, bg: "bg-[#0a1d37]" },
+              { title: "مقدم يبدأ من", value: `${parseFloat(down_payment_percent).toFixed(0)}%`, bg: "bg-[#0a1d37]" },
+              { title: "قسط", value: `${installment_years} سنين`, bg: "bg-[#0a1d37]" },
             ].map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.5 }}
-                className={`${item.bg} p-6 text-gray-900 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all`}
+                className={`${item.bg} p-6 text-gray-100  rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all`}
               >
                 <h3 className="text-xl font-medium">{item.title}</h3>
                 <p className="mt-2 text-2xl font-bold">{item.value}</p>
