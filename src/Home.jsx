@@ -160,7 +160,7 @@ export default function Home() {
               
               <div className="flex justify-between items-center p-4 bg-gray-100">
                 <div className="p-4">
-                  <h3 className="text-2xl font-bold capitalize">{unit.type}</h3>
+                  <h3 className="text-2xl font-bold capitalize text-gray-800">{unit.type}</h3>
                   <p className="mt-2 text-gray-600">{unit.bref}</p>
                 </div>
                 <div className="flex space-x-4">
