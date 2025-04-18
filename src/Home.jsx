@@ -116,7 +116,7 @@ export default function Home() {
         className="max-w-4xl mx-auto my-16 px-4 space-y-6"
       >
         <h2 className="text-3xl font-semibold text-center text-gray-200">مميزات المشروع</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-semibold  p-6 ">
+       {/*  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-semibold  p-6 ">
           {[
             { title: "موقع متميز", desc:" ٣ دقائق من مول مصر , ٣ دقائق من وصلة دهشور, ٥ دقائق من ميدان جهينه " },
             { title: "تصميم عصري", desc: " قامت شركة اوراسكوم بوضع افضل الخطط الهندسيه و الاستراتيجيه التي تتبع المواصفات و المعايير الدوليه لكي يتم تصميم الكمبوند بصوره معماريه تمزج بين الحضاره المصريه و الديزاين الاوروبي" }, 
@@ -135,7 +135,11 @@ export default function Home() {
               <p className="mt-2 text-gray-600">{feature.desc}</p>
             </motion.div>
           ))}
-        </div>
+        </div> */}
+     <div className="flex justify-center items-center my-4 bg-white rounded-xl shadow-lg p-6">
+  <img src={img1} alt="launch" className="h-[600px] w-[300px] bg-white" />
+</div>
+
       </motion.section>
 
       {/* Slider */}
@@ -207,9 +211,7 @@ export default function Home() {
         </div>
       </motion.div>
 
-      <div className="flex justify-center items-center my-4 bg-white rounded-xl shadow-lg p-6">
-  <img src={img1} alt="launch" className="h-[600px] w-[300px] bg-white" />
-</div>
+    
 
       {/* Footer */}
       <Footer phoneNumber={phone} />
