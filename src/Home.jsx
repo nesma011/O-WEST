@@ -158,33 +158,28 @@ export default function Home() {
                 className="w-full h-64 object-cover"
               />
               
-              {units
-  ?.sort((a, b) => a.type.localeCompare(b.type)) // الترتيب الأبجدي
-  .map((unit, index) => (
-    <div key={index} className="flex justify-between items-center p-4 bg-gray-100 mb-4">
-      <div className="p-4">
-        <h3 className="text-2xl font-bold capitalize text-gray-800">{unit.type}</h3>
-        <p className="mt-2 text-gray-600">{unit.bref}</p>
-      </div>
-      <div className="flex space-x-4">
-        <a
-          href={`https://wa.me/${unit.phone}`} // استخدمي unit.phone لو رقم خاص بكل وحدة
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-green-500 hover:text-green-600"
-        >
-          <FaWhatsapp className="text-3xl" />
-        </a>
-        <a
-          href={`tel:${unit.phone}`}
-          className="text-blue-500 hover:text-blue-600"
-        >
-          <FaPhone className="text-3xl" />
-        </a>
-      </div>
-    </div>
-))}
-
+              <div className="flex justify-between items-center p-4 bg-gray-100">
+                <div className="p-4">
+                  <h3 className="text-2xl font-bold capitalize text-gray-800">{unit.type}</h3>
+                  <p className="mt-2 text-gray-600">{unit.bref}</p>
+                </div>
+                <div className="flex space-x-4">
+                  <a
+                    href={`https://wa.me/${phone}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-500 hover:text-green-600"
+                  >
+                    <FaWhatsapp className="text-3xl" />
+                  </a>
+                  <a
+                    href={`tel:${phone}`}
+                    className="text-blue-500 hover:text-blue-600"
+                  >
+                    <FaPhone className="text-3xl" />
+                  </a>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
