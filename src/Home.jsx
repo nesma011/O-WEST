@@ -143,45 +143,48 @@ export default function Home() {
       <div className="max-w-6xl mx-auto my-16 px-4">
         <h2 className="text-3xl font-semibold text-center mb-8 text-gray-100">الوحدات المتاحة</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {units.map((unit) => (
-            <motion.div
-              key={unit.id}
-              whileHover={{ scale: 1.05 }}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg relative"
-            >
-              <img
-                src={unit.media_unit[0]?.image}
-                alt={unit.type}
-                className="w-full h-64 object-cover"
-              />
-              
-              <div className="flex justify-between items-center p-4 bg-gray-100">
-                <div className="p-4">
-                  <h3 className="text-2xl font-bold capitalize text-gray-800">{unit.type}</h3>
-                  <p className="mt-2 text-gray-600">{unit.bref}</p>
-                </div>
-                <div className="flex space-x-4">
-                  <a
-                    href={`https://wa.me/${phone}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-500 hover:text-green-600"
-                  >
-                    <FaWhatsapp className="text-3xl" />
-                  </a>
-                  <a
-                    href={`tel:${phone}`}
-                    className="text-blue-500 hover:text-blue-600"
-                  >
-                    <FaPhone className="text-3xl" />
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+        {[...units]
+  .sort((a, b) => a.type.localeCompare(b.type)) // الترتيب الأبجدي
+  .map((unit) => (
+    <motion.div
+      key={unit.id}
+      whileHover={{ scale: 1.05 }}
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="bg-white rounded-2xl overflow-hidden shadow-lg relative"
+    >
+      <img
+        src={unit.media_unit[0]?.image}
+        alt={unit.type}
+        className="w-full h-64 object-cover"
+      />
+
+      <div className="flex justify-between items-center p-4 bg-gray-100">
+        <div className="p-4">
+          <h3 className="text-2xl font-bold capitalize text-gray-800">{unit.type}</h3>
+          <p className="mt-2 text-gray-600">{unit.bref}</p>
+        </div>
+        <div className="flex space-x-4">
+          <a
+            href={`https://wa.me/${phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-500 hover:text-green-600"
+          >
+            <FaWhatsapp className="text-3xl" />
+          </a>
+          <a
+            href={`tel:${phone}`}
+            className="text-blue-500 hover:text-blue-600"
+          >
+            <FaPhone className="text-3xl" />
+          </a>
+        </div>
+      </div>
+    </motion.div>
+))}
+
         </div>
       </div>
 
