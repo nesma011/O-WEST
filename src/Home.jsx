@@ -8,6 +8,7 @@ import bg from './assets/bg.jpg'
 import logo from './assets/logo.jpg' // افترضت وجود صورة للوجو
 import Slider from './Slider'
 import Footer from './Footer'
+import img1 from './assets/img1.jpeg'
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL
 
@@ -207,7 +208,9 @@ export default function Home() {
         </div>
       </motion.div>
 
-      <img src="" alt="" />
+      <div className="flex justify-center items-center my-4 bg-white rounded-xl shadow-lg p-6">
+  <img src={img1} alt="launch" className="h-[600px] w-[300px] bg-white" />
+</div>
 
       {/* Footer */}
       <Footer phoneNumber={phone} />
