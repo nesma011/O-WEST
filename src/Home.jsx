@@ -46,7 +46,7 @@ export default function Home() {
   const phone = `20${cleanedPhone}`
   
   return (
-    <div className="font-sans text-gray-800 overflow-x-hidden">
+    <div className="font-sans text-gray-100 overflow-x-hidden bg-[#0a1d37]">
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
@@ -114,8 +114,8 @@ export default function Home() {
         viewport={{ once: true }}
         className="max-w-4xl mx-auto my-16 px-4 space-y-6"
       >
-        <h2 className="text-3xl font-semibold text-center text-gray-800">مميزات المشروع</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <h2 className="text-3xl font-semibold text-center text-gray-200">مميزات المشروع</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-semibold  p-6 ">
           {[
             { title: "موقع متميز", desc: "قريب من جميع الخدمات" },
             { title: "تصميم عصري", desc: "وحدات مصممة بعناية" },
@@ -126,10 +126,10 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="p-6 bg-white rounded-xl shadow-md text-center"
+              className="p-6 bg-gradient-to-r from-[#b5cef1] to-[#e9f2ff] rounded-xl shadow-md text-center"
             >
               <div className="text-4xl text-blue-500 mb-4">🏡</div>
-              <h3 className="text-xl font-semibold">{feature.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-700">{feature.title}</h3>
               <p className="mt-2 text-gray-600">{feature.desc}</p>
             </motion.div>
           ))}
@@ -141,7 +141,7 @@ export default function Home() {
 
       {/* Available Units */}
       <div className="max-w-6xl mx-auto my-16 px-4">
-        <h2 className="text-3xl font-semibold text-center mb-8 text-gray-800">الوحدات المتاحة</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8 text-gray-100">الوحدات المتاحة</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {units.map((unit) => (
             <motion.div
@@ -193,7 +193,7 @@ export default function Home() {
         viewport={{ once: true }}
         className="max-w-4xl mx-auto my-16 px-4 space-y-6"
       >
-        <h2 className="text-3xl font-semibold text-center mb-8 text-green-800">OWEST Compound</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8 text-white">OWEST Compound</h2>
         <div className="bg-white p-6 rounded-xl shadow-lg">
           <p
             className="text-gray-800 text-right text-xl leading-relaxed"

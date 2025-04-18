@@ -7,7 +7,7 @@ const Footer = ({ phoneNumber }) => {
   };
 
   return (
-    <footer className="bg-[#0a1d37] text-white">
+    <footer className="bg-white text-[#0a1d37]">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 gap-4 py-6">
         <div>
           <h4 className="text-l font-semibold text-center">
@@ -30,7 +30,7 @@ const Footer = ({ phoneNumber }) => {
         </div>
       </div>
 
-      <div className="text-center text-xs text-gray-400 pb-4">
+      <div className="text-center text-xs text-gray-900 pb-4">
         © {new Date().getFullYear()} All rights reserved.
       </div>
     </footer>
