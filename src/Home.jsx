@@ -75,7 +75,7 @@ export default function Home() {
             {name}
           </motion.h1>
           <h1 className='text-3xl py-4 font-semibold pe-4'>
-  🚀 Launching New Phase with Unique Apartments 🏢✨
+  🚀 Launching New Phase with Unique Apartments and Villas🏢✨
 </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mb-12 ">
             {[
@@ -117,9 +117,11 @@ export default function Home() {
         <h2 className="text-3xl font-semibold text-center text-gray-200">مميزات المشروع</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-semibold  p-6 ">
           {[
-            { title: "موقع متميز", desc: "قريب من جميع الخدمات" },
-            { title: "تصميم عصري", desc: "وحدات مصممة بعناية" },
-            { title: "مرافق كاملة", desc: "حمامات سباحة ونوادي" },
+            { title: "موقع متميز", desc:" ٣ دقائق من مول مصر , ٣ دقائق من وصلة دهشور, ٥ دقائق من ميدان جهينه " },
+            { title: "تصميم عصري", desc: " قامت شركة اوراسكوم بوضع افضل الخطط الهندسيه و الاستراتيجيه التي تتبع المواصفات و المعايير الدوليه لكي يتم تصميم الكمبوند بصوره معماريه تمزج بين الحضاره المصريه و الديزاين الاوروبي" }, 
+            { title: "مرافق كاملة", desc: 
+             "لاند سكيب علي مساحات ضحممه, ١٠% من المساحه مباني و ٩٠% مساحات خضراء, ١٠ حمامات سباحه, ١٠ ملاعب بادل, ١٠ ملاعب تنس, ١٠ ملاعب كره سله, ١٠ ملاعب كره قدم, ١٠ ملاعب كره طائره, ١٠ ملاعب سكواش, ١٠ ملاعب جيمناستك, ١٠ ملاعب اطفال, ١٠ مسارات للدراجات,"
+},
           ].map((feature, index) => (
             <motion.div
               key={index}
@@ -141,7 +143,7 @@ export default function Home() {
 
       {/* Available Units */}
       <div className="max-w-6xl mx-auto my-16 px-4">
-        <h2 className="text-3xl font-semibold text-center mb-8 text-gray-100">الوحدات المتاحة</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8 text-gray-100">Compact Villas Coming Soon 🚀🏢✨ </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {[...units]
   .sort((a, b) => a.type.localeCompare(b.type)) // الترتيب الأبجدي
@@ -204,6 +206,8 @@ export default function Home() {
           />
         </div>
       </motion.div>
+
+      <img src="" alt="" />
 
       {/* Footer */}
       <Footer phoneNumber={phone} />
