@@ -5,7 +5,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 import { FaWhatsapp, FaPhone, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 import bg from './assets/bg.jpg'
-import logo from './assets/logo.jpg' // افترضت وجود صورة للوجو
+import logo from './assets/logo.jpg' 
 import Slider from './Slider'
 import Footer from './Footer'
 import img1 from './assets/img1.jpeg'
@@ -52,7 +52,6 @@ export default function Home() {
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
           <img src={logo} alt="Logo" className="h-12" />
-          {/* يمكنك إضافة روابط تنقل هنا إذا أردت */}
         </div>
       </nav>
 
@@ -107,7 +106,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Project Details (Placeholder) */}
+      {/* Project Details */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -149,7 +148,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold text-center mb-8 text-gray-100">Compact Villas Coming Soon 🚀🏢✨ </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {[...units]
-  .sort((a, b) => a.type.localeCompare(b.type)) // الترتيب الأبجدي
+  .sort((a, b) => a.type.localeCompare(b.type))
   .map((unit) => (
     <motion.div
       key={unit.id}
