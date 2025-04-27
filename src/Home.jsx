@@ -68,7 +68,7 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
-          <img src={logo} alt="Logo" className="h-12" />
+          <img src={logo} alt=" owest كمبوند أويست 6 أكتوبر" className="h-12" />
         </div>
       </nav>
 
@@ -76,7 +76,7 @@ export default function Home() {
       <div className="relative h-screen w-full overflow-hidden pt-16">
         <motion.img
           src={bg}
-          alt={name}
+          alt=" owest كمبوند أويست 6 أكتوبر"
           className="absolute w-full h-full object-cover"
           initial={{ scale: 1 }}
           animate={{ scale: 1.1 }}
@@ -92,7 +92,7 @@ export default function Home() {
             {name}
           </motion.h1>
           <h1 className='text-3xl py-4 font-semibold pe-4'>
-  🚀 Launching New Phase with Unique Apartments and Villas🏢✨
+  🚀 Launching New Phase with Unique Apartments and Villas on OWEST🏢✨
 </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mb-12 ">
             {[
@@ -152,7 +152,7 @@ export default function Home() {
           ))}
         </div> */}
      <div className="flex justify-center items-center my-4 rounded-xl shadow-lg p-6">
-  <img src={img1} alt="launch" className="h-[600px] w-[300px] bg-white" />
+  <img src={img1} alt=" owest كمبوند أويست 6 أكتوبر" className="h-[600px] w-[300px] bg-white" />
 </div>
 
       </motion.section>
@@ -177,7 +177,7 @@ export default function Home() {
     >
       <img
         src={unit.media_unit[0]?.image}
-        alt={unit.type}
+        alt=" owest كمبوند أويست 6 أكتوبر"
         className="w-full h-64 object-cover"
       />
 
