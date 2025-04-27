@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -48,6 +49,22 @@ export default function Home() {
   
   return (
     <div className="font-sans text-gray-100 overflow-x-hidden bg-[#0a1d37]">
+          <Helmet>
+      <title>{name ? `${name} ` : 'Loading...'}</title>
+      <meta name="description" content={description ? description.slice(0, 160) : 'اكتشف أفضل المشروعات العقارية'} />
+      
+      {/* OG Tags for Facebook and Social Media */}
+      <meta property="og:title" content={name} />
+      <meta property="og:description" content={description ? description.slice(0, 160) : ''} />
+      <meta property="og:image" content={media_project?.[0]?.image || img1} />
+      <meta property="og:type" content="website" />
+      
+      {/* Twitter Card Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={name} />
+      <meta name="twitter:description" content={description ? description.slice(0, 160) : ''} />
+      <meta name="twitter:image" content={media_project?.[0]?.image || img1} />
+    </Helmet>
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
